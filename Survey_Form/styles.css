@@ -1,0 +1,26 @@
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.radio {
+    display: block;
+}
+
+.bio, .check {
+    display: block;
+    margin: 2px 0;
+    max-width: 350px;
+}
+
+fieldset {
+    margin: 5px auto;
+}
+
+#name, #email, #number {
+    min-width: 300px;
+}
+
+textarea {
+    min-width: 300px;
+}

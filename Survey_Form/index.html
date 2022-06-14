@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>Meu Formulário</title>
+</head>
+    <body>
+        <h1 id="title">Formulário pessoal</h1>
+        <p id="description">Esse formulário foi criado para ser parte do meu portifólio.</p>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Bio:</legend>
+                <label class="bio" id="name-label">Nome: <input type="text" id="name" placeholder="Insira seu nome" required /></label>
+                <label class="bio" id="email-label">Email: <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Insira seu Email" required /></label>
+                <label class="bio" id="number-label">Número: <input type="number" id="number" min="1" max="1000" step="1" placeholder="Insira o número" required /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Gênero:</legend>
+                <select id="dropdown">
+                    <option>(Escolha um)</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Função:</legend>
+                <label class="radio"><input type="radio" name="funcao" value="1" > Programador</label>
+                <label class="radio"><input type="radio" name="funcao" value="2" > Desenvolvedor</label>
+                <label class="radio"><input type="radio" name="funcao" value="3" > Engenheiro</label>
+                <label class="radio"><input type="radio" name="funcao" value="4" > Designer</label>
+            </fieldset>
+            <fieldset>
+                <legend>Aceitar os termos:</legend>
+                <label class="check"><input type="checkbox" value="5" > Aceito os termos e condições</label>
+                <label class="check"><input type="checkbox" value="6" > Aceito receber emails e recomendações</label>
+                <label class="check"><input type="checkbox" value="7" > Aceito todos os cookies</label>
+            </fieldset>
+            <fieldset>
+                <legend>Adicione informações:</legend>
+                <textarea></textarea>
+            </fieldset>
+            <input id="submit" type="submit">
+        </form>
+    </body>
+</html>
