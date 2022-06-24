@@ -1,0 +1,80 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+#header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: aliceblue;
+    height: 80px;
+}
+
+#header a {
+    margin-top: 30px;
+    margin-right: 30px;
+    float: right;
+    display: inline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    padding-left: 0;
+    text-decoration: none;
+}
+
+#header-img {
+    top: 30%;
+    width: 300px;
+    position: absolute;
+}
+
+#section {
+    margin: 0 15%;
+}
+
+.youtube {
+    margin: auto;
+    width: 560px;
+}
+
+#section h1 {
+    margin-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.valores {
+    text-align: center;
+    margin: 30px auto;
+    width: 250px;
+}
+
+.valores h3 {
+    background-color: silver;
+    margin-top: 0;
+    padding-top: 20px;
+    height: 40px;
+}
+
+.valores h2, .valores h3, .valores p, #section p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.trio {
+    margin: 30px 15% 0 15%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#form {
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .trio {
+        display: block;
+    }
+}
